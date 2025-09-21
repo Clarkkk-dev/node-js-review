@@ -25,3 +25,10 @@ const someFunction = async () => {
 }
 
 someFunction();
+
+console.log(data); //error data is not defined
+
+process.on("uncaughtException", (err) => {
+    console.log("There was an uncaught exception". err);
+    process.exit(1);
+})
