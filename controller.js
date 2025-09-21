@@ -1,0 +1,15 @@
+
+//What is a controller?
+export const usernameController  = (req, res) => {
+    const username = req.params.username;
+    res.send(`Welcome ${username}`);
+}
+
+export const searchController  =  (req, res)=> {
+    const keyword = req.query.keyword;
+    res.send(`Searching for ${keyword}`);
+}
+
+export const userLoginController = (req, res) => {
+    res.send('this is a user login route');
+}
